@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combo do Bar - Oferta Única</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #1a1a2e;
+            --bg-sec: #16213e;
+            --text-white: #ffffff;
+            --gold: #eab308;
+            --gray: #6b7280;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-white);
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background-color: var(--bg-main);
+            padding: 24px 20px 48px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .badge-top {
+            background-color: var(--gold);
+            color: #000;
+            text-align: center;
+            font-weight: 800;
+            font-size: 14px;
+            padding: 10px;
+            border-radius: 8px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .headline {
+            font-size: 24px;
+            font-weight: 800;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .subheadline {
+            color: var(--gold);
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .mockup-img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            display: block;
+            background-color: #2a2a4a; /* placeholder if img doesn't load */
+            min-height: 200px;
+            object-fit: cover;
+        }
+
+        .body-section {
+            background-color: var(--bg-sec);
+            padding: 24px;
+            border-radius: 12px;
+            font-size: 15px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .list-items {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .list-items li {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .urgency-text {
+            font-weight: 800;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .author-section {
+            background-color: var(--bg-sec);
+            padding: 24px;
+            border-radius: 12px;
+            border: 2px solid var(--gold);
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .author-section strong {
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .price-section {
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .price-old {
+            color: var(--gray);
+            text-decoration: line-through;
+            font-size: 18px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .price-new {
+            color: var(--gold);
+            font-size: 48px;
+            font-weight: 800;
+            display: inline-block;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .price-sub {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .highlight-gold {
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .highlight-white {
+            color: var(--text-white);
+            font-weight: 700;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px rgba(234, 179, 8, 0.2),
+                             0 0 10px rgba(234, 179, 8, 0.2);
+            }
+            to {
+                text-shadow: 0 0 10px rgba(234, 179, 8, 0.6),
+                             0 0 20px rgba(234, 179, 8, 0.4),
+                             0 0 30px rgba(234, 179, 8, 0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="badge-top">⚡ ÚLTIMA CHANCE, SÓ NESSA TELA</div>
+        
+        <h1 class="headline">Última chance! Você está deixando dinheiro na mesa, literalmente.</h1>
+        
+        <h2 class="subheadline">Leve o Combo do Bar completo por apenas R$27,90 e domine sinuca, cartas e apostas de uma vez</h2>
+        
+        <img src="https://res.cloudinary.com/dtcjxw6ax/image/upload/q_auto/f_auto/v1777829675/Four_hardcover_books_casino_202605031434_bgbbs8.jpg" alt="Combo do Bar" class="mockup-img">
+        
+        <div class="body-section">
+            <p>Você já tem o <span class="highlight-gold">Taco Forte</span>. Já sabe dominar a sinuca.</p>
+            <p>Mas no bar, a <span class="highlight-gold">resenha</span> não para na sinuca. Tem <span class="highlight-gold">Truco, Cacheta, Buraco</span> e sempre tem <span class="highlight-gold">dinheiro</span> rolando em cima de tudo isso.</p>
+            <p>Quem não sabe jogar <span class="highlight-gold">cartas</span> fica de fora. Quem não sabe <span class="highlight-gold">apostar certo</span> perde o que ganhou na sinuca.</p>
+            <p>Esse combo reúne tudo que você precisaria comprar separado por muito mais:</p>
+            
+            <ul class="list-items">
+                <li>
+                    <span>🎱</span>
+                    <span><span class="highlight-gold">Cartas na Mesa</span> — <span class="highlight-white">+150 táticas</span> de Truco, Cacheta e Buraco para nunca mais passar vergonha na mesa de cartas</span>
+                </li>
+                <li>
+                    <span>🎱</span>
+                    <span><span class="highlight-gold">Apostas no Bar</span> — <span class="highlight-white">+100 dicas</span> para ganhar dinheiro com sinuca e cartas; as mesmas que eu só consegui pagando caro por elas</span>
+                </li>
+            </ul>
+        </div>
+
+        <p class="urgency-text"><span class="highlight-gold">Dois materiais.</span> <span class="highlight-gold">Um preço absurdo.</span> Só nessa tela. Se você sair agora sem levar, essa oferta some. <span class="highlight-gold">Não tem segunda chance.</span></p>
+
+        <div class="author-section">
+            <p>Desenvolvido por <span class="highlight-gold">Rafael Matos</span>; Jogador e Instrutor de Sinuca; Participante da LBS; 12+ anos de mesa; mais de <span class="highlight-white">1.900 pessoas</span> já adquiriram esse combo e estão dominando o bar completo</p>
+        </div>
+
+        <div class="price-section">
+            <span class="price-old">De R$114,90 por:</span>
+            <span class="price-new">R$27,90</span>
+            <span class="price-sub">Pagamento único, agora ou nunca</span>
+        </div>
+
+        <!-- Wiapy Script -->
+        <script src="https://wiapy.com/sell/1.0.0/sell.min.js"></script>
+        <div id="wiapy_upsell"></div>
+        <script>
+        initWiapyUpsell({
+            linkUrl: "https://pay.wiapy.com/checkout/undefined",
+            linkText: "SIM, EU ACEITO ESSA OFERTA",
+            styles: {
+                backgroundColor: "#00d769",
+                hoverBackgroundColor: "#00b85a",
+                fontSize: "17px",
+                borderRadius: "10px"
+            },
+            refusalLinkUrl: "https://wiapy.com/login",
+            refusalLinkText: "Recusar está oferta",
+            refusalLinkColor: "#6b7280"
+        });
+        </script>
+
+    </div>
+
+</body>
+</html>
+
